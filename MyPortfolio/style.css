@@ -1,0 +1,327 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto&display=swap');
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background: linear-gradient(to bottom right, #ea1663, #ff6173) center/cover
+    no-repeat;
+  font-family: 'Roboto', sans-serif;
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.content {
+  position: relative;
+  z-index: 10;
+}
+
+.bg {
+  background: url(./img/bg.JPG) center/cover no-repeat;
+  height: 400px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0.1;
+  z-index: 1;
+}
+
+.line {
+  text-underline-offset: 20px;
+  text-underline-position: 50px auto;
+}
+
+.myName {
+  font-family: 'Pacifico', cursive;
+  color: #fff;
+}
+
+h1 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+h2 {
+  font-family: 'Pacifico', cursive;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.lead {
+  margin-bottom: 20px;
+}
+
+li {
+  list-style: none;
+}
+
+li:hover {
+  color: #fff;
+  transition: 0.5s;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:visited {
+  color: #000;
+}
+
+a:hover {
+  color: #fff;
+  transition: 0.5s;
+}
+
+.head {
+  margin-top: 95px;
+  text-align: center;
+}
+
+.lead {
+  font-size: 1.2rem;
+}
+
+.social_links {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.social_links li {
+  margin-right: 20px;
+}
+
+.box {
+  background-color: #fff;
+  margin-bottom: 30px;
+  padding: 30px;
+}
+
+.box_black {
+  background-color: #000;
+  color: #fff;
+  margin-bottom: 70px;
+}
+
+.aboutme_content {
+  display: flex;
+}
+
+.myPic {
+  width: 400px;
+  border-radius: 50%;
+}
+
+.aboutme_content > p {
+  margin: 45px 0 0 50px;
+  line-height: 2rem;
+}
+
+#skills {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.skill_list:hover {
+  transform: scale(1.02);
+  transition: 0.3s;
+}
+
+.skill_name {
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.skill_name {
+  text-align: left;
+  font-size: 1.2rem;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-weight: 200;
+}
+
+#lists {
+  text-align: left;
+  list-style-type: lower-latin;
+}
+#projects {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.project_img {
+  width: 320px;
+  height: 200px;
+  margin-bottom: 10px;
+}
+
+.project_name {
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.project_list:hover {
+  transform: scale(1.02);
+  transition: 0.3s;
+}
+
+#contact {
+  display: flex;
+}
+
+.formgroup,
+.contactlinks {
+  flex: 50%;
+}
+
+.formRow,
+input,
+textarea {
+  width: 100%;
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type='submit'] {
+  border-radius: 20px;
+  padding: 3px 0;
+}
+
+input[type='submit']:hover {
+  background-color: #ff6173;
+  transition: 0.3s;
+  color: #fff;
+}
+
+.contactlinks ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 80px;
+  margin-left: 100px;
+}
+
+.contactlinks ul li {
+  margin-bottom: 20px;
+}
+
+.contactlinks ul li i {
+  margin-right: 30px;
+}
+
+.linkedinicon:visited {
+  color: #fff;
+}
+
+footer {
+  text-align: center;
+}
+
+footer p {
+  margin-bottom: 20px;
+}
+
+#down {
+  font-style: italic;
+}
+
+@media screen and (max-width: 480px) {
+  .container {
+    max-width: 90%;
+  }
+
+  .aboutme_content,
+  #projects,
+  #contact {
+    flex-direction: column;
+  }
+
+  .myPic {
+    display: block;
+    width: 270px;
+    margin: 0 auto;
+  }
+
+  .aboutme_content p {
+    padding: 0;
+    margin: 30px 0 0 0;
+    text-align: justify;
+  }
+
+  .project_img {
+    width: 300px;
+    height: 200px;
+  }
+
+  .project_list {
+    margin-bottom: 20px;
+  }
+
+  .contactlinks ul {
+    flex-direction: column;
+    margin-top: 20px;
+    margin-left: 0;
+  }
+
+  .box_black {
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (min-device-width: 481px) and (max-width: 1024px) {
+  .container {
+    max-width: 90%;
+  }
+
+  .aboutme_content,
+  #projects,
+  #contact {
+    flex-direction: column;
+  }
+
+  .myPic {
+    display: block;
+    width: 400px;
+    margin: 0 auto;
+  }
+
+  .aboutme_content > p {
+    margin: 40px 0 0 0;
+    line-height: 1.3rem;
+  }
+
+  .project_img {
+    width: 450px;
+    height: 300px;
+  }
+
+  .project_list {
+    margin-bottom: 20px;
+  }
+
+  .contactlinks ul {
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 20px;
+    margin-left: 0;
+  }
+
+  .box_black {
+    margin-bottom: 30px;
+  }
+}
